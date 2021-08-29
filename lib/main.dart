@@ -1,3 +1,4 @@
+import 'package:economy_app/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,6 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Map<String, WidgetBuilder> routes = {
+      SPLASH_SCREEN: (context) => MyHomePage(title: "Splash"),
+      HOME_SCREEN: (context) => MyHomePage(title: "Home")
+    };
+
     final MaterialColor primaryColor = Colors.red;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -17,7 +23,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: primaryColor,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      routes: routes,
+      initialRoute: HOME_SCREEN,
     );
   }
 }
@@ -38,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: new Color(0xFFE74C3C),
         body: new Center(
           child: new Text(
-            "Splash here",
+            widget.title,
             style: TextStyle(color: Colors.white),
           ),
         ));
