@@ -1,8 +1,9 @@
+// packages
 import 'package:flutter/material.dart';
-
-import 'package:economy_app/routes.dart';
-import 'package:economy_app/screens/home/index.dart';
-import 'package:economy_app/screens/splash/index.dart';
+// constant files
+import 'package:economy_app/constants/colors/themes/dark_theme/index.dart';
+import 'package:economy_app/constants/colors/themes/light_theme/index.dart';
+import 'package:economy_app/constants/routes/index.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,22 +12,15 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final Map<String, WidgetBuilder> routes = {
-      SPLASH_SCREEN: (context) => SplashScreen(),
-      HOME_SCREEN: (context) => HomeScreen()
-    };
-
-    final MaterialColor primaryColor = Colors.red;
     return MaterialApp(
+      // removed debug label
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData(
-        primarySwatch: primaryColor,
-      ),
-      theme: ThemeData(
-        primarySwatch: primaryColor,
-      ),
-      routes: routes,
-      initialRoute: HOME_SCREEN,
+      // themes
+      darkTheme: darkThemeData,
+      theme: lightThemeData,
+      //routes
+      routes: AppRoutes.routes,
+      initialRoute: AppRoutes.INITIAL_ROUTE,
     );
   }
 }
