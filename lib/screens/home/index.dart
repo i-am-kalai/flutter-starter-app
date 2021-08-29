@@ -1,4 +1,8 @@
+// packages
 import 'package:flutter/material.dart';
+
+// Widgets
+import 'package:economy_app/components/common_place_holder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -6,9 +10,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new Center(
-        child: new Text("Home Screen"),
-      ),
-    );
+        body: CommonPlaceHolder(
+      "Home Screen",
+      color: Colors.green,
+    ));
   }
 }

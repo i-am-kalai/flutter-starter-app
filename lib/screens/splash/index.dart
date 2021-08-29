@@ -1,4 +1,8 @@
+// packages
 import 'package:flutter/material.dart';
+
+// widgets
+import 'package:economy_app/components/common_place_holder.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -11,16 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: new Container(
-      color: Colors.red,
-      child: new Center(
-        child: new Text(
-          "Splash screen",
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-      ),
-    ));
+      body: CommonPlaceHolder("Splash Screen"),
+    );
   }
 }
