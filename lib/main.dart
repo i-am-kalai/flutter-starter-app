@@ -1,4 +1,5 @@
 import 'package:economy_app/routes.dart';
+import 'package:economy_app/screens/splash/index.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,14 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Map<String, WidgetBuilder> routes = {
-      SPLASH_SCREEN: (context) => MyHomePage(title: "Splash"),
+      SPLASH_SCREEN: (context) => SplashScreen(),
       HOME_SCREEN: (context) => MyHomePage(title: "Home")
     };
 
     final MaterialColor primaryColor = Colors.red;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       darkTheme: ThemeData(
         primarySwatch: primaryColor,
       ),
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: primaryColor,
       ),
       routes: routes,
-      initialRoute: HOME_SCREEN,
+      initialRoute: SPLASH_SCREEN,
     );
   }
 }
