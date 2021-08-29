@@ -2,10 +2,10 @@
 import 'package:flutter/material.dart';
 
 // Widgets
-import 'package:economy_app/components/common_place_holder.dart';
+import 'package:starter_app/components/common_place_holder.dart';
 
 // constants
-import 'package:economy_app/constants/routes/index.dart';
+import 'package:starter_app/constants/routes/index.dart';
 
 class TutorialScreen extends StatefulWidget {
   const TutorialScreen({Key? key}) : super(key: key);

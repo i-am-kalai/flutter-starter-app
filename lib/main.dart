@@ -1,9 +1,9 @@
 // packages
 import 'package:flutter/material.dart';
 // constant files
-import 'package:economy_app/constants/colors/themes/dark_theme/index.dart';
-import 'package:economy_app/constants/colors/themes/light_theme/index.dart';
-import 'package:economy_app/constants/routes/index.dart';
+import 'package:starter_app/constants/colors/themes/dark_theme/index.dart';
+import 'package:starter_app/constants/colors/themes/light_theme/index.dart';
+import 'package:starter_app/constants/routes/index.dart';
 
 void main() {
   runApp(MyApp());

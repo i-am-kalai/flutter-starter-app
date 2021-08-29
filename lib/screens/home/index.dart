@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // Widgets
-import 'package:economy_app/components/common_place_holder.dart';
+import 'package:starter_app/components/common_place_holder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

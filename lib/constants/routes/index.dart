@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Widgets
-import 'package:economy_app/screens/home/index.dart';
-import 'package:economy_app/screens/splash/index.dart';
-import 'package:economy_app/screens/tutorial/index.dart';
+import 'package:starter_app/screens/home/index.dart';
+import 'package:starter_app/screens/splash/index.dart';
+import 'package:starter_app/screens/tutorial/index.dart';
 
 // Constants
-import 'package:economy_app/constants/keys.dart';
+import 'package:starter_app/constants/keys.dart';
 
 class InitiatorScreen extends StatelessWidget {
   @override

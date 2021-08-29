@@ -1,6 +1,6 @@
 {
-    "name": "economy_app",
-    "short_name": "economy_app",
+    "name": "starter_app",
+    "short_name": "starter_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
